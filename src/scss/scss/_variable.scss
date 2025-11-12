@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+$px-font: 'Space Grotesk', sans-serif !default;
+
+// Theme Variable
+
+
+
+// $px-theme: #6f0202;
+// $px-theme: #9c0101;
+
+
+
+// $px-theme: #0788ff;
+// $px-theme-rgb: 7, 136, 255;
+
+// 🌈 Brand Colors
+$px-theme:  #9c0101; // Primary red (main brand color)
+$px-theme-rgb: 156, 1, 1; // RGB for rgba() uses
+
+$px-white: #fff;
+$px-black: #040c16;
+
+// $px-text: #707476;
+// $px-heading: #fff;
+
+
+
+
+// 🖋️ Text Colors
+$px-text: #e5bcbc; // Muted light red-gray for normal text
+$px-heading: #ffffff; // White for headings for strong contrast
+// Breakpoints
+$px-media-xsm: 567px !default;
+$px-media-sm: 767px !default;
+$px-media-md: 991px !default;
+$px-media-lg: 1200px !default;
