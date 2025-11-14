@@ -154,7 +154,7 @@
 
   // 👇 menu text red before scroll
   .main-menu > li a {
-    color: var(--px-theme);
+    color: var(--px-black);
     &:hover {
       color: (var(--px-theme), 10%);
     }

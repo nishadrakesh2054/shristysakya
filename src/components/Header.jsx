@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
+import { Icon } from "@iconify/react/dist/iconify.js";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Header() {
   const [mobileToggle, setMobileToggle] = useState(false);
@@ -14,16 +15,16 @@ export default function Header() {
         setScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <div
       className={`header-top-fixed one-page-nav ${
-        mobileToggle ? 'menu-open menu-open-desk' : ''
-      } ${scrolled ? 'fixed-header' : ''}`}
+        mobileToggle ? "menu-open menu-open-desk" : ""
+      } ${scrolled ? "fixed-header" : ""}`}
     >
       <div className="container">
         {/* <div className="logo">
@@ -37,16 +38,15 @@ export default function Header() {
           </Link>
         </div> */}
         <div className="logo">
-  <Link className="navbar-brand" to="#">
-    <h2 className="logo-text">Shristy Sakya</h2>
-     {/* <h2 className="logo-text">logo</h2> */}
-
-  </Link>
-</div>
+          <Link className="navbar-brand" to="#">
+            <h2 className="logo-text">Studio Jams.</h2>
+            {/* <h2 className="logo-text">logo</h2> */}
+          </Link>
+        </div>
 
         {/* / */}
         <ul className="main-menu">
-          <li >
+          <li>
             <ScrollLink
               to="home"
               spy={true}
@@ -79,7 +79,7 @@ export default function Header() {
               duration={500}
               onClick={() => setMobileToggle(false)}
             >
-              Projects
+              My Work
             </ScrollLink>
           </li>
           <li>
@@ -108,7 +108,7 @@ export default function Header() {
           </li>
         </ul>
         {/* Top Menu */}
-        <div className="d-flex">
+        <div className="d-flex align-content-center">
           <ScrollLink
             to="contactus"
             spy={true}
@@ -118,7 +118,10 @@ export default function Header() {
             onClick={() => setMobileToggle(false)}
             className="px-btn d-none d-lg-inline-flex border-2 py-2 border-light"
           >
-            Lets' Talk
+            Call{" "}
+            <i>
+              <Icon icon="bi:arrow-right" />
+            </i>
           </ScrollLink>
           <button
             className="toggler-menu d-lg-none "

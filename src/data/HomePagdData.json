@@ -2,16 +2,16 @@
     "hero": {
         "imgUrl": "/images/home-banner.png",
         "name": "Shristy Shakya",
-        "heading": "Hay! I’m Shristy",
+        "heading": "Hey there, I’m Shristi.",
         "typingText": [
-            "I'm a Graphic Designe",
+            "I'm a Brand Designer",
             1500,
-            "I'm a  Visual Creator",
+            "I'm a  Visual Stratergist",
             1500
         ],
-        "description": "Creative and passionate graphic designer crafting visuals that tell stories, build brands, and inspire audiences.",
-        "btnText": "Get in touch",
-        "btnUrl": "contactus"
+        "description": "I design brand identities that make your business stand out and connect with people — visually, emotionally, and strategically.",
+        "btnText": "View My Work",
+        "btnUrl": "services"
     },
     "socialBtns": [
         {
@@ -183,112 +183,33 @@
             }
         ]
     },
-    "service": {
-        "sectionHeading": {
-            "miniTitle": "SERVICES",
-            "title": "Design <span>services</span> I am providing"
-        },
-        "allService": [
-            {
-                "imgUrl": "/images/service-04.jpg",
-                "title": "Brand Identity Design",
-                "icon": "bi:badge-ad",
-                "ratings": 5
-            },
-            {
-                "imgUrl": "/images/service-01.jpg",
-                "title": "Logo & Visual Design",
-                "icon": "bi:brush",
-                "ratings": 5
-            },
-            {
-                "imgUrl": "/images/service-02.jpg",
-                "title": "Website & UI Design",
-                "icon": "bi:layout-text-window-reverse",
-                "ratings": 4.5
-            },
-            {
-                "imgUrl": "/images/service-03.jpg",
-                "title": "Social Media Design",
-                "icon": "bi:instagram",
-                "ratings": 3
-            },
-            {
-                "imgUrl": "/images/service-04.jpg",
-                "title": "Print & Marketing Collaterals",
-                "icon": "bi:file-earmark-richtext",
-                "ratings": 4
-            },
-            {
-                "imgUrl": "/images/service-01.jpg",
-                "title": "Packaging Design",
-                "icon": "bi:box-seam",
-                "ratings": 5
-            },
-            {
-                "imgUrl": "/images/service-02.jpg",
-                "title": "Presentation & Pitch Decks",
-                "icon": "bi:sliders",
-                "ratings": 4.5
-            },
-            {
-                "imgUrl": "/images/service-03.jpg",
-                "title": "Creative  Consulting",
-                "icon": "bi:lightbulb",
-                "ratings": 3.5
-            }
-        ]
-    },
-    "experience": {
-        "sectionHeading": {
-            "miniTitle": "Experience",
-            "title": "My Work <span>Experience</span>"
-        },
-        "allExperience": [
-            {
-                "designation": "Graphic Designer",
-                "company": "Helios Creative Studio | Kathmandu, Nepal",
-                "duration": "Jan 2022 - Present",
-                "jobType": "Full Time",
-                "companyTitle": "Navative Company",
-                "companyDescription": "Helios Creative Studio is a multidisciplinary design agency specializing in branding, marketing, and digital media. I work closely with clients to create impactful brand identities, social media visuals, and marketing materials that help businesses stand out."
-            },
-            {
-                "designation": "Visual Designer",
-                "company": "PixelCraft Design Agency | Remote",
-                "duration": "Jul 2020 - Dec 2021",
-                "jobType": "Contract",
-                "companyTitle": "Pixelleto Company",
-                "companyDescription": "PixelCraft is a creative design firm that collaborates with startups and global brands. My responsibilities included developing brand visuals, website mockups, and print-ready marketing assets for a variety of industries."
-            }
-        ]
-    },
+  
     "testimonial": {
         "sectionHeading": {
             "miniTitle": "Testimonial",
-            "title": "Over <span>1,00+</span> <br /> PEOPLE TRUST ME"
+            "title": "What People Say  <br /> About My Work"
         },
         "allTestimonial": [
             {
-                "reviewText": "Shristy Sakya designed our brand identity with incredible creativity and attention to detail. He understood exactly what our business needed and delivered more than expected. Highly professional and easy to work with!",
+                "reviewText": "Shristy designed our brand identity with creativity and precision. He delivered more than expected.",
                 "avatarImg": "/images/avatar-1.jpg",
                 "avatarName": "Sanjita Maharjan",
                 "avatarCompany": "Himalayan Threads Pvt. Ltd."
             },
             {
-                "reviewText": "Working with Shristy Sakya was a smooth experience. He designed our website and social media graphics that perfectly matched our brand. His design sense and quick delivery impressed our whole team.",
+                "reviewText": "Working with Shristy was smooth and professional. Our website and designs matched our brand perfectly.",
                 "avatarImg": "/images/avatar-2.jpg",
                 "avatarName": "Bikash Shrestha",
                 "avatarCompany": "Nepal Coffee Roasters"
             },
             {
-                "reviewText": "Shristy Sakya is one of the most talented designers I’ve collaborated with. His poster and branding designs for our events were modern and impactful. Highly recommended for creative projects!",
+                "reviewText": "A highly creative designer. His event posters and branding work were modern and impactful.",
                 "avatarImg": "/images/avatar-3.jpg",
                 "avatarName": "Prerana Lama",
                 "avatarCompany": "Everest Events Nepal"
             },
             {
-                "reviewText": "We hired Shristy Sakya for our product packaging and logo redesign. The results were amazing! He captured our vision beautifully and gave our brand a fresh new identity. Very satisfied with his work.",
+                "reviewText": "Shristy redesigned our logo and packaging beautifully. He gave our brand a fresh and appealing identity.",
                 "avatarImg": "/images/avatar-4.jpg",
                 "avatarName": "Kiran Adhikari",
                 "avatarCompany": "Mountain Organics"
@@ -297,18 +218,14 @@
     },
     "contact": {
         "sectionHeading": {
-            "title": "Let’s Discuss Your Project",
-            "subTitle": "Always available for freelancing if the right project comes along, Feel free to contact me."
+            "title": "Let’s Work Together",
+            "subTitle": "Feel free to rich out for a projects, collaboration or just a friendly hello!"
         },
         "contactImg": "/images/contact-us.png",
         "contactInfo": [
             {
                 "title": "Write an e-mail",
                 "email": "shristy@gmail.com"
-            },
-            {
-                "title": "Call or WhatsApp",
-                "tel": "+977 9845892346"
             }
         ]
     },
@@ -370,7 +287,7 @@
                 "subTitle": "Logo, Identity",
                 "category": "Branding"
             },
-              {
+            {
                 "thumbUrl": "/images/popup-project-2.jpg",
                 "title": "Website Design 2",
                 "subTitle": "Web Design, App Design",
@@ -382,7 +299,6 @@
                 "subTitle": "Web Design, App Design",
                 "category": "Mobile App Design"
             },
-          
             {
                 "thumbUrl": "/images/popup-project-5.jpg",
                 "title": "Website Design 3",
@@ -475,10 +391,10 @@
             }
         ]
     },
-    "newservice": {
+    "service": {
         "sectionHeading": {
             "miniTitle": "SERVICES",
-            "title": "My <span>Design Expertise</span> & Services"
+            "title": "Design <span>Services</span> I Can Do for You"
         },
         "allService": [
             {

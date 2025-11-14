@@ -1,40 +1,34 @@
-// import Brands from "../components/Brands";
+import Brands from "../components/Brands";
 // import Projects from "../components/Projects";
 import Testimonial from "../components/Testimonial";
 import Hero from "../components/Hero";
 import About from "../components/About";
 // import Service from "../components/Service";
 import HomePagdData from "../data/HomePagdData.json";
-import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Work from "../components/Work";
-import Newservice from "../components/Newservice";
+// import Newservice from "../components/Newservice";
+import Service from "../components/Service";
 
 export default function Home() {
   const {
     hero,
     socialBtns,
-    // brands,
     about,
-    // projects,
-    // service,
-    experience,
+    brands,
     testimonial,
     contact,
     work,
-    newservice,
+    service,
   } = HomePagdData;
   return (
     <>
       <Hero data={hero} socialData={socialBtns} />
       <About data={about} />
+      <Brands data={brands} />
       <Work data={work} />
-      {/* <Brands data={brands} /> */}
-      <Newservice data={newservice} />
 
-      {/* <Projects data={projects} /> */}
-      {/* <Service data={service} /> */}
-      <Experience data={experience} />
+      <Service data={service} />
       <Testimonial data={testimonial} />
       <Contact data={contact} socialData={socialBtns} />
     </>
