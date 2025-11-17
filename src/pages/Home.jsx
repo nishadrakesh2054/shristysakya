@@ -1,4 +1,4 @@
-import Brands from "../components/Brands";
+// import Brands from "../components/Brands";
 // import Projects from "../components/Projects";
 import Testimonial from "../components/Testimonial";
 import Hero from "../components/Hero";
@@ -8,14 +8,14 @@ import HomePagdData from "../data/HomePagdData.json";
 import Contact from "../components/Contact";
 import Work from "../components/Work";
 // import Newservice from "../components/Newservice";
-import Service from "../components/Service";
+import Services from "../components/Services";
 
 export default function Home() {
   const {
     hero,
     socialBtns,
     about,
-    brands,
+    // brands,
     testimonial,
     contact,
     work,
@@ -23,12 +23,12 @@ export default function Home() {
   } = HomePagdData;
   return (
     <>
-      <Hero data={hero} socialData={socialBtns} />
+      <Hero data={hero}  />
       <About data={about} />
-      <Brands data={brands} />
+      {/* <Brands data={brands} /> */}
       <Work data={work} />
 
-      <Service data={service} />
+      <Services data={service} />
       <Testimonial data={testimonial} />
       <Contact data={contact} socialData={socialBtns} />
     </>

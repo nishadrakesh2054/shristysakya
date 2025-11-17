@@ -1,7 +1,7 @@
 {
     "hero": {
         "imgUrl": "/images/home-banner.png",
-        "name": "Shristy Shakya",
+        "name": "Shristi Shakya",
         "heading": "Hey there, I’m Shristi.",
         "typingText": [
             "I'm a Brand Designer",
@@ -11,176 +11,90 @@
         ],
         "description": "I design brand identities that make your business stand out and connect with people — visually, emotionally, and strategically.",
         "btnText": "View My Work",
-        "btnUrl": "services"
+        "btnUrl": "projects"
     },
-    "socialBtns": [
-        {
-            "icon": "fa-brands:facebook-f",
-            "iconBgClass": "facebook",
-            "href": "/"
-        },
-        {
-            "icon": "fa-brands:instagram",
-            "iconBgClass": "instagram",
-            "href": "/"
-        },
-        {
-            "icon": "fa-brands:behance",
-            "iconBgClass": "behance",
-            "href": "/"
-        },
-        {
-            "icon": "fa-brands:linkedin-in",
-            "iconBgClass": "linkedin",
-            "href": "/"
-        }
-    ],
+
     "brands": [
         {
-            "src": "/images/brand-1.svg",
+            "src": "/images/logo.png",
+            "alt": "Logolpsum"
+        },
+    
+        {
+            "src": "/images/logo1.png",
             "alt": "Logolpsum"
         },
         {
-            "src": "/images/brand-2.svg",
+            "src": "/images/logo2.png",
+            "alt": "Logolpsum"
+        },
+     
+        {
+            "src": "/images/logo.png",
             "alt": "Logolpsum"
         },
         {
-            "src": "/images/brand-1.svg",
+            "src": "/images/logo1.png",
             "alt": "Logolpsum"
         },
         {
-            "src": "/images/brand-2.svg",
+            "src": "/images/logo2.png",
             "alt": "Logolpsum"
         },
         {
-            "src": "/images/brand-1.svg",
+            "src": "/images/logo.png",
             "alt": "Logolpsum"
         },
         {
-            "src": "/images/brand-2.svg",
+            "src": "/images/logo1.png",
             "alt": "Logolpsum"
         },
         {
-            "src": "/images/brand-1.svg",
+            "src": "/images/logo2.png",
             "alt": "Logolpsum"
         },
         {
-            "src": "/images/brand-2.svg",
+            "src": "/images/logo.png",
+            "alt": "Logolpsum"
+        },
+        {
+            "src": "/images/logo1.png",
+            "alt": "Logolpsum"
+        },
+        {
+            "src": "/images/logo2.png",
             "alt": "Logolpsum"
         }
     ],
     "about": {
-        "imgSrc": "/images/about-banner.png",
-        "miniTitle": "About Me",
-        "title": "I AM AVAILABLE FOR <span>Graphics DESIGN</span> PROJECTS",
-        "description": "I'm a passionate designer dedicated to creating meaningful digital experiences. I blend creativity with strategy to craft user-friendly designs that not only look great but also solve real problems. Every project is an opportunity to bring ideas to life with clarity and purpose.",
-        "funfacts": [
+        "aboutMe": "I’m a brand designer specialising in creating identities that reflect purpose, personality and presence. Over the past five years, I’ve partnered with businesses and creators who want their brand to mean something, not just look good.",
+        "process": [
             {
-                "title": "Happy Clients",
-                "number": 120
+                "title": "Discover:",
+                "description": " understanding who you are and who you speak to"
             },
             {
-                "title": "Years of Experience",
-                "number": 5
+                "title": "Define:",
+                "description": "creating a clear position and visual direction"
             },
             {
-                "title": "Projects Completed",
-                "number": 280
+                "title": "Design:",
+                "description": "building identity systems that work across touchpoints"
             }
         ],
-        "btnText": "Get in touch",
-        "btnUrl": "contactus"
-    },
-    "projects": {
-        "sectionHeading": {
-            "miniTitle": "My Work",
-            "title": "RECENT PROJECT"
-        },
-        "allProjects": [
-            {
-                "thumbUrl": "/images/popup-project-1.jpg",
-                "title": "Website Design",
-                "subTitle": "Web Design, App Design",
-                "details": {
-                    "title": "Website Design for Marketing Agency Startup",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    "type": "Website",
-                    "langages": "PHP, HTML, CSS, JS",
-                    "platform": "WordPress",
-                    "country": "USA",
-                    "url": "www.example.com"
-                }
-            },
-            {
-                "thumbUrl": "/images/popup-project-2.jpg",
-                "title": "Website Design",
-                "subTitle": "Web Design, App Design",
-                "details": {
-                    "title": "Website Design for Marketing Agency Startup",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    "type": "Website",
-                    "langages": "PHP, HTML, CSS, JS",
-                    "platform": "WordPress",
-                    "country": "USA",
-                    "url": "www.example.com"
-                }
-            },
-            {
-                "thumbUrl": "/images/popup-project-3.jpg",
-                "title": "Dashboard Design",
-                "subTitle": "Web Design, App Design",
-                "details": {
-                    "title": "Website Design for Marketing Agency Startup",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    "type": "Website",
-                    "langages": "PHP, HTML, CSS, JS",
-                    "platform": "WordPress",
-                    "country": "USA",
-                    "url": "www.example.com"
-                }
-            },
-            {
-                "thumbUrl": "/images/popup-project-4.jpg",
-                "title": "Mobile App Design",
-                "subTitle": "Web Design, App Design",
-                "details": {
-                    "title": "Website Design for Marketing Agency Startup",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    "type": "Website",
-                    "langages": "PHP, HTML, CSS, JS",
-                    "platform": "WordPress",
-                    "country": "USA",
-                    "url": "www.example.com"
-                }
-            },
-            {
-                "thumbUrl": "/images/popup-project-5.jpg",
-                "title": "Website Design",
-                "subTitle": "Web Design, App Design",
-                "details": {
-                    "title": "Website Design for Marketing Agency Startup",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    "type": "Website",
-                    "langages": "PHP, HTML, CSS, JS",
-                    "platform": "WordPress",
-                    "country": "USA",
-                    "url": "www.example.com"
-                }
-            },
-            {
-                "thumbUrl": "/images/popup-project-6.jpg",
-                "title": "Website Design",
-                "subTitle": "Web Design, App Design",
-                "details": {
-                    "title": "Website Design for Marketing Agency Startup",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                    "type": "Website",
-                    "langages": "PHP, HTML, CSS, JS",
-                    "platform": "WordPress",
-                    "country": "USA",
-                    "url": "www.example.com"
-                }
-            }
+        "aboutMe1": "I believe that every brand has a story worth telling. My job is to shape that story into visuals and experiences that not only stand out but stick.",
+        "skills": [
+            "Brand identity",
+            "Visual systems & guidelines",
+            "Social & content design",
+            "Packaging and collateral",
+            "UI design"
+        ],
+        "tools": [
+            "Figma",
+            "Adobe Illustrator",
+            "Photoshop",
+            "InDesign"
         ]
     },
   
@@ -194,31 +108,36 @@
                 "reviewText": "Shristy designed our brand identity with creativity and precision. He delivered more than expected.",
                 "avatarImg": "/images/avatar-1.jpg",
                 "avatarName": "Sanjita Maharjan",
-                "avatarCompany": "Himalayan Threads Pvt. Ltd."
+                "avatarCompany": "Himalayan Threads Pvt. Ltd.",
+                "ratings": 5
             },
             {
                 "reviewText": "Working with Shristy was smooth and professional. Our website and designs matched our brand perfectly.",
                 "avatarImg": "/images/avatar-2.jpg",
                 "avatarName": "Bikash Shrestha",
-                "avatarCompany": "Nepal Coffee Roasters"
+                "avatarCompany": "Nepal Coffee Roasters",
+                "ratings": 5
             },
             {
                 "reviewText": "A highly creative designer. His event posters and branding work were modern and impactful.",
                 "avatarImg": "/images/avatar-3.jpg",
                 "avatarName": "Prerana Lama",
-                "avatarCompany": "Everest Events Nepal"
+                "avatarCompany": "Everest Events Nepal",
+                "ratings": 4.5
             },
             {
                 "reviewText": "Shristy redesigned our logo and packaging beautifully. He gave our brand a fresh and appealing identity.",
                 "avatarImg": "/images/avatar-4.jpg",
                 "avatarName": "Kiran Adhikari",
-                "avatarCompany": "Mountain Organics"
+                "avatarCompany": "Mountain Organics",
+                "ratings": 5
             }
         ]
     },
     "contact": {
         "sectionHeading": {
-            "title": "Let’s Work Together",
+            "miniTitle": "Contact",
+            "title": "Let's <span>Work</span> Together",
             "subTitle": "Feel free to rich out for a projects, collaboration or just a friendly hello!"
         },
         "contactImg": "/images/contact-us.png",

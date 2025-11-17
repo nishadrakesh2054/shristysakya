@@ -174,6 +174,17 @@ a {
     @include down-md {
       padding-bottom: 50px;
     }
+
+    .hero-greeting {
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--px-text);
+      margin-bottom: 8px;
+      @include down-sm {
+        font-size: 16px;
+      }
+    }
+
     h6 {
       margin: 0 0 10px;
       span {
@@ -192,13 +203,14 @@ a {
     h1 {
       color: var(--px-white);
       font-weight: 700;
-      font-size: 30px;
+      font-size: 36px;
       //   text-transform: uppercase;
       @include down-lg {
         font-size: 45px;
       }
       @include down-sm {
-        font-size: 35px;
+        margin-top: 10px;
+        font-size: 28px;
       }
     }
     h2 {
@@ -212,7 +224,7 @@ a {
         margin: 0 0 20px;
       }
       @include down-sm {
-        font-size: 30px;
+        font-size: 26px;
         margin: 0 0 10px;
       }
     }
@@ -232,6 +244,18 @@ a {
     .btn-bar {
       padding-top: 15px;
     }
+    .btn-ba {
+      padding-top: 20px;
+      @include down-sm {
+        padding-top: 15px;
+      }
+      .px-btn {
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 10;
+      }
+    }
   }
 }
 
@@ -244,55 +268,217 @@ a {
     position: relative;
     z-index: 1;
   }
-  .effect-1 {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    z-index: -1;
-    animation: rotate360 reverse 40s linear infinite;
-    @include down-md {
-      display: none;
+
+  // About Me Section
+  .about-me-section {
+    .about-me-label {
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--px-theme);
+      margin-bottom: 20px;
     }
   }
-  .effect-2 {
-    position: absolute;
-    top: 80px;
-    right: -60px;
-    z-index: -1;
-    animation: rotate360 40s linear infinite;
+
+  // About Me Text - applies to all instances
+  .about-me-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 900px;
     @include down-md {
-      display: none;
+      font-size: 18px;
+    }
+    @include down-sm {
+      font-size: 16px;
     }
   }
-  .about-text {
-    .section-heading {
-      margin-bottom: 25px;
+
+  // Process Section
+  .process-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    @include down-md {
+      font-size: 28px;
     }
-    p {
+    @include down-sm {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  .process-step {
+    padding: 30px 25px;
+    background: rgba(var(--px-theme-rgb), 0.02);
+    border-left: 4px solid var(--px-theme);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+    @include down-sm {
+      padding: 20px 15px;
+    }
+    &:hover {
+      background: rgba(var(--px-theme-rgb), 0.06);
+      transform: translateY(-5px);
+      //   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .step-number {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background: var(--px-theme);
       color: var(--px-white);
-    }
-  }
-  .review-box {
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 45px;
-    .r-box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--px-theme);
+      border-radius: 50%;
       display: flex;
-      flex-direction: column;
-      color: var(--px-white);
-      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      @include down-sm {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        top: 15px;
+        right: 15px;
+      }
+    }
+    .step-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: var(--px-theme);
+      text-transform: capitalize;
+      @include down-md {
+        font-size: 22px;
+      }
+      @include down-sm {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+    }
+    .step-description {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--px-text);
+      @include down-sm {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Brand Design Component Box
+  .brand-design-box {
+    border: 2px solid var(--px-black);
+    border-radius: 8px;
+    padding: 20px 30px;
+    display: inline-block;
+    background: transparent;
+    @include down-sm {
+      padding: 15px 20px;
+    }
+    .brand-design-title {
+      font-size: 24px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin: 0;
+      @include down-sm {
+        font-size: 20px;
+      }
+    }
+  }
+
+  // Skills Section
+  .skills-section,
+  .tools-section {
+    padding: 30px;
+    border-radius: 12px;
+    @include down-sm {
       padding: 20px;
-      h3 {
-        margin: 0 0 8px;
+    }
+    .skills-title,
+    .tools-title {
+      font-size: 28px;
+      font-weight: 700;
+      //   margin-bottom: 20px;
+      color: var(--px-black);
+      position: relative;
+      padding-bottom: 15px;
+      @include down-sm {
+        font-size: 22px;
+        margin-bottom: 20px;
       }
-      label {
-        font-size: 13px;
-        line-height: 130%;
+    }
+    .skills-list,
+    .tools-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      .skill-item,
+      .tool-item {
+        font-size: 18px;
+        line-height: 2.2;
+        padding-left: 30px;
+        position: relative;
+        // margin-bottom: 8px;
+        transition: all 0.3s ease;
+        @include down-sm {
+          font-size: 16px;
+          padding-left: 25px;
+        }
+        &:before {
+          content: "→";
+          position: absolute;
+          left: 0;
+          color: var(--px-theme);
+          font-weight: 700;
+          font-size: 20px;
+        }
+        &:hover {
+          padding-left: 35px;
+          color: var(--px-theme);
+        }
       }
-      + .r-box {
-        margin-left: 10px;
+    }
+  }
+
+  // Brands Grid Section
+  .brands-grid-section {
+    padding: 20px 0;
+    .brand-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      background: transparent;
+      transition: all 0.3s ease;
+      height: 100%;
+      min-height: 80px;
+      @include down-sm {
+        padding: 15px;
+        min-height: 80px;
+      }
+      &:hover {
+        transform: translateY(-5px);
+      }
+      .brand-logo {
+        max-width: 100%;
+        max-height: 60px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        opacity: 1;
+        transition: all 0.3s ease;
+        @include down-sm {
+          max-height: 50px;
+        }
+      }
+      &:hover .brand-logo {
+        opacity: 1;
+        transform: scale(1.1);
       }
     }
   }
@@ -667,15 +853,15 @@ a {
       }
     }
   }
-.follow{
-     font-weight: 400;
-        font-size: 12px;
-        color: var(--px-black);
-        margin: 0 0 2px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        opacity: 0.75;  
-}
+  .follow {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--px-black);
+    margin: 0 0 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.75;
+  }
   .contactus-box {
     border: 1px solid rgba(var(--px-theme), 0.2);
   }
@@ -817,54 +1003,3 @@ a {
 /* ----------------------
 *   Custom Curosor
 ---------------------------*/
-
-.cs-cursor_lg,
-.cs-cursor_sm {
-  position: fixed;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
-  z-index: 9999;
-}
-.cs-cursor_lg {
-  width: 40px;
-  height: 40px;
-  border: 1px solid transparent;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  transition: 0.15s;
-}
-.cs-cursor_sm {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  left: 15px;
-  top: 15px;
-  pointer-events: none;
-  transition: all 0.1s ease;
-}
-@media screen and (max-width: 575px) {
-  .cs-cursor_lg,
-  .cs-cursor_sm {
-    display: none;
-  }
-}
-.index-module_type__E-SaG::after {
-  position: relative;
-  top: -5px;
-}
-@keyframes rotate360 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animo-x {
-  50% {
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateX(35px);
-  }
-}

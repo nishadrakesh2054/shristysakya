@@ -1,15 +1,13 @@
-
-
-
 import React from "react";
 import SectionHeading from "./SectionHeading";
 import Slider from "react-slick";
+import Ratings from "./Ratings";
 
 export default function Testimonial({ data }) {
   const { sectionHeading, allTestimonial } = data;
 
   var settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     autoplay: false,
@@ -40,7 +38,6 @@ export default function Testimonial({ data }) {
         <img src="/images/effect-3.svg" alt="" />
       </div>
 
-
       <div className="container">
         <SectionHeading
           miniTitle={sectionHeading.miniTitle}
@@ -52,12 +49,24 @@ export default function Testimonial({ data }) {
           <Slider {...settings}>
             {allTestimonial?.map((item, index) => (
               <div key={index} className="px-3">
-                <div className="testimonial-box h-100">
+                <div
+                  className="testimonial-box h-100"
+                  style={{
+                    border: "1px solid rgba(0, 0, 0, 0.1)",
+                    borderRadius: "8px",
+                  }}
+                >
                   <div className="t-user">
                     <img src={item.avatarImg} alt="Avatar" />
                   </div>
 
                   <div className="t-text text-dark">{item.reviewText}</div>
+
+                  {item.ratings && (
+                    <div className="rating-wrap mb-3 d-flex justify-content-center">
+                      <Ratings ratings={item.ratings} />
+                    </div>
+                  )}
 
                   <div className="t-person">
                     <h6>{item.avatarName}</h6>

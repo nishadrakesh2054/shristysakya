@@ -106,6 +106,23 @@ export default function Header() {
               Contact
             </ScrollLink>
           </li>
+          {/* Call button in mobile menu */}
+          <li className="d-lg-none mobile-call-btn">
+            <ScrollLink
+              to="contactus"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={() => setMobileToggle(false)}
+              className="px-btn  text-white"
+            >
+              Call{" "}
+              <i>
+                <Icon icon="bi:arrow-right" />
+              </i>
+            </ScrollLink>
+          </li>
         </ul>
         {/* Top Menu */}
         <div className="d-flex align-content-center">

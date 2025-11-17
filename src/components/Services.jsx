@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 import Slider from "react-slick";
 import Ratings from "./Ratings";
 
-export default function Service({ data }) {
+export default function Services({ data }) {
   const { sectionHeading, allService } = data;
 
   const settings = {
@@ -21,7 +21,7 @@ export default function Service({ data }) {
   };
 
   return (
-    <section className="project-section section gray-bg" id="project">
+    <section className="project-section section " id="services">
       <div className="container">
         <SectionHeading
           miniTitle={sectionHeading.miniTitle}
@@ -38,7 +38,9 @@ export default function Service({ data }) {
               <div key={index} style={{ width: "416px" }}>
                 <div
                   className="services-box"
-                  style={{ backgroundImage: `url(${item.imgUrl})` }}
+                  style={{
+                    backgroundImage: `url(${item.imgUrl})`,
+                  }}
                   data-aos="fade-left"
                   data-aos-duration="1200"
                   data-aos-delay={index * 100}
